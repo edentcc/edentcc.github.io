@@ -26,7 +26,6 @@ div{
     font-family:  "Lexend Deca", sans-serif;
     font-size: 2vh;
     font-weight: 300;    
-    width: 90%;
 }
 .line{
   height: 1px;
@@ -34,7 +33,7 @@ div{
 }
 
 button {
-    background-color: #50704D;
+    background-color: #607D6A;
     color: #fff;
     font-family:  "Lexend Deca", sans-serif;
     font-weight: bold;
@@ -43,6 +42,9 @@ button {
     padding: 2vh 4vh;
     border-radius: 2vh;
     margin-bottom: 1vh;
+}
+button:hover{
+    cursor: pointer;
 }
 
 .container{
@@ -67,4 +69,6 @@ header{
 }
 .gallery{
     height: 10vh;
+    border-radius: 1vh;
+    margin: 0.25vh;
 }
