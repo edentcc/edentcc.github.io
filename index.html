@@ -14,25 +14,27 @@
 <body>
     <div class="container">
         <header>
-            <div style="display: flex;">        
+            <div class='box'>  
+            <div class="app-icon">
                 <img class="app-icon" src="../images/app-icon.svg">
+            </div>    
                 <div>
                     <div>
                         <h1 class="title">Éden – seu app de hortas!</h1>
                         <h2 class="subtitle">@eden.tcc</h2>
                     </div>
-                    <div style="margin-top: 2vh;">
+                    <div class="button-container" style="margin-top: 2vh;">
                         <button style="box-shadow: 0px 0px 13px #73B389;"> Baixar APK </button>
                         <button style="opacity: 80%;"> Baixar artigo</button>
-                        <button style="background-color:#BCBCBC; color:#5F6368;"> 
+                        <button style="background-color:#BCBCBC; color:#5F6368;" id="computer-button"> 
                             O Éden não é compatível com seu dispositivo. Assista a um vídeo demo.
                         </button>
                     </div>
                 </div>
             </div>
-            <div style="border-left: 1px solid #ccc;"></div>
-            <div style="width: 70%; display: flex;">
-                <div >
+            <div  class="line" id="computer-line"></div>
+            <div class='box' id="pc-format">
+                <div>
                     <p class="subtitle">Introdução</p>
                     <p class="text">
                     O “Éden” é um aplicativo mobile que incentiva e guia a criação de hortas caseiras, com o foco de facilitar o cultivo por iniciantes, fornecendo orientações e promovendo práticas sustentáveis no cotidiano. A proposta central é desenvolver uma atividade prazerosa, prática e beneficente para a saúde e bem estar, mesmo para aqueles que não têm nenhuma experiência ou espaço em casa. Além disso, o projeto visa integrar de forma prática e educativa o conceito de sustentabilidade, hortoterapia e agroflorestamento, mostrando atividades e materiais informativos sobre as temáticas.
@@ -44,24 +46,26 @@
                     <img class="gallery" src="/images/app-icon.svg">
                 </div>
             </div>
-        </header>
+        </header>        
+        <div class="line" id="cellphone-line"></div>
         <section>
-            <div style="display: flex;">
+            <div class='obj-box' >
+                <div class="ods-img">
+                    <img class="gallery" src="/images/ods-2.svg">
+                    <img class="gallery" src="/images/ods-3.svg">
+                    <img class="gallery" src="/images/ods-11.svg">
+                    <img class="gallery" src="/images/ods-12.svg">
+                </div>
                 <div>
                     <p class="subtitle">Objetivos</p>
                     <p class="text">
                         O aplicativo visa aperfeiçoar um estilo de vida consciente, autônomo e saudável. Ao incentivar o plantio doméstico, fomentar o bem-estar físico e mental e a sensibilização ambiental, o sistema propõe não apenas transformar o ambiente da casa, mas também a conexão do usuário com o lugar em que vive. A longo prazo, espera-se que a comunidade toda seja envolvida e transformada em uma sociedade formada por cidadãos mais conscientes e responsáveis.
                     </p>
                     <p class="text">
-                        dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                        O Éden é baseado nos seguintes Objetivos de Desenvolvimento Sustentável (ODS) da ONU: ODS 2, que objetiva garantir segurança alimentar e produção consciente; ODS 3, destinada a promover saúde e bem-estar de acesso; ODS 11, foca-se em um futuro sustentável em cidades que ofereçam acessibilidade e segurança; e ODS 12, visa assegurar o desenvolvimento humano de forma responsável, respeitando outros aspectos do meio.
                     </p>
                 </div>
-                <div style="display: grid; grid-template-columns: 1fr 2fr;">
-                    <img class="gallery" src="/images/ods-2.svg">
-                    <img class="gallery" src="/images/ods-3.svg">
-                    <img class="gallery" src="/images/ods-11.svg">
-                    <img class="gallery" src="/images/ods-12.svg">
-                </div>
+
             </div>
             <div class="line"></div>
             <div>
@@ -91,13 +95,16 @@
     </div>
     <footer>
         <div>
-            <h2 class="subtitle">Informções de Contato</h2>
-            <a class="text">Email: </a> <br>
-            <a class="text">GitHub: </a> <br>
-            <a class="text">Instagram: </a> <br>
+            <h2 class="subtitle">Informações de Contato</h2>
+            <div>
+                <a href="mailto:eden.tcc2025@gmail.com" class="text" >Email: eden.tcc2025@gmail.com</a> <br>
+                <a href="https://github.com/edentcc" class="text">GitHub: edentcc</a> <br>
+                <a href="https://www.instagram.com/eden.tcc" class="text">Instagram: @eden.tcc</a> <br>
+            </div>
+            
         </div>
-        <div>
-            <img src="/images/logo-slogan-white.svg">
+        <div class="logo-slogan-white" >
+            <img src="/images/logo-slogan-white.svg" class="logo-slogan-white">
         </div>
         
     </footer>

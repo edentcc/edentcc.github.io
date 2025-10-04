@@ -1,0 +1,124 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F6F6F6;
+}
+footer{
+    background-color: #607D6A;
+}
+
+
+button {
+    background-color: #607D6A;
+    color: #fff;
+    font-family:  "Lexend Deca", sans-serif;
+    font-weight: bold;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+.title {
+    color: #607D6A;
+    font-family:  "Lexend Deca", sans-serif;
+    font-weight: bold;
+}
+.subtitle {
+    color: #999999;
+    font-family:  "Lexend Deca", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+.text {
+    color: #999999;
+    font-family:  "Lexend Deca", sans-serif;
+    font-weight: 300;  
+}
+.line{
+    border-bottom : 1px solid #ccc; border-bottom-width: 10%;
+}
+
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+      
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) and (orientation: portrait) {
+                
+}
+
+@media screen and (max-width: 991px) and (orientation: landscape) {
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) and (orientation: landscape)  {
+
+}
+
+@media screen and (min-width: 1201px) and (orientation: landscape)  {
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 9vh;
+    }
+    footer{
+        padding:10vh;
+        height: 50vh;
+    }
+
+    div{
+        padding: 1vh;
+    }
+    button {
+        font-size: 2vh;
+        padding: 2vh 4vh;
+        border-radius: 2vh;
+        margin-bottom: 1vh;
+    }
+
+    .title {font-size: 3.5vh;}
+    .subtitle {font-size: 2vh;}
+    .text {
+        font-size: 1.9vh;
+        margin-top: 2vh;   
+    }
+
+    .line{
+        margin: 8vh 2vh;
+    }
+    #computer-line{
+        border-bottom: 0px;
+        border-left: 1px solid #ccc;        
+    }
+
+
+    .container{
+        padding: 7vh;
+    }
+    .box{
+        display: flex;
+    }
+    .info{
+        margin-bottom: 10vh;
+    }
+
+
+    .app-icon{
+        height: 30vh;
+    }
+    .gallery{
+        height: 10vh;
+        border-radius: 1vh;
+        margin: 0.25vh;
+    }
+    header .gallery:hover{
+        cursor: pointer;
+    }
+
+}

@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -5,36 +6,11 @@
 body{
     background-color: #F6F6F6;
 }
-.container{
-    padding: 7vh;
+footer{
+    background-color: #607D6A;
 }
-div{
-    padding: 1vh;
-}
-.title {
-    color: #607D6A;
-    font-family:  "Lexend Deca", sans-serif;
-    font-weight: bold;
-    font-size: 3.5vh;
-}
-.subtitle {
-    color: #999999;
-    font-family:  "Lexend Deca", sans-serif;
-    font-weight: 500;
-    font-size: 2vh;
-    text-decoration: none;
-}
-.text {
-    color: #999999;
-    font-family:  "Lexend Deca", sans-serif;
-    font-size: 1.9vh;
-    font-weight: 300; 
-    margin-top: 2vh;   
-}
-.line{
-    border-bottom : 1px solid #ccc; border-bottom-width: 10%;
-    margin: 8vh 2vh;
-}
+
+
 
 button {
     background-color: #607D6A;
@@ -42,45 +18,190 @@ button {
     font-family:  "Lexend Deca", sans-serif;
     font-weight: bold;
     border: none;
-    font-size: 2vh;
-    padding: 2vh 4vh;
-    border-radius: 2vh;
-    margin-bottom: 1vh;
 }
 button:hover{
     cursor: pointer;
 }
 
 
-.logo-slogan{
+.title {
+    color: #607D6A;
+    font-family:  "Lexend Deca", sans-serif;
+    font-weight: bold;
+}
+.subtitle {
+    color: #999999;
+    font-family:  "Lexend Deca", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+.text {
+    color: #999999;
+    font-family:  "Lexend Deca", sans-serif;
+    font-weight: 300;  
+    text-decoration: none;
+}
+.line{
+    border-bottom : 1px solid #ccc; border-bottom-width: 10%;
+}
+#computer-button{
+    display: none;
+}
+
+
+.logo-slogan-white{
     display: flex; 
     justify-content: center;
-    margin-top: 15vh;
+    margin-top: 5vh;
+}
+footer .subtitle{color: #fff}
+footer .text{color: #fff}
+
+@media screen and (max-width: 991px) {
+    footer{
+        padding:7vh;
+        height: 50vh;
+    }
+
+    div{
+        padding: 1vh;
+    }
+    button {
+        font-size: 1.75vh;
+        padding: 2vh 3vh;
+        border-radius: 1vh;    
+
+    }
+    .button-container{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 2.5vh;
+        text-align: center;
+    }
+    .subtitle {font-size: 2vh;}
+    header .subtitle {text-align: center;}
+    .text {
+        font-size: 1.25vh;
+        margin-top: 2vh;   
+    }
+    .line{
+        margin: 2vh 2vh;
+    }
+
+    .container{
+        padding: 3vh;
+    }
+    .obj-box{
+        display: flex;    
+    }
+
+    .info{
+        margin-bottom: 5vh;
+    }
+
+
+    .app-icon{
+        height: 20vh;
+        display: flex; 
+        justify-content: center;
+    }
+    .gallery{
+        height: 9vh;
+        border-radius: 1vh;
+        margin: 0.25vh;
+    }
+
+    .logo-slogan-white{
+        height: 10vh;
+    }
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 9vh;
-}
+@media screen and (min-width: 992px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 9vh;
+    }
+    footer{
+        padding:10vh;
+        height: 50vh;
+    }
 
-.app-icon{
-    height: 30vh;
-}
-.gallery{
-    height: 10vh;
-    border-radius: 1vh;
-    margin: 0.25vh;
-}
-header .gallery:hover{
-    cursor: pointer;
-}
-.info{
-    margin-bottom: 10vh;
-}
+    div{
+        padding: 1vh;
+    }
+    button {
+        font-size: 2vh;
+        padding: 2vh 4vh;
+        border-radius: 2vh;
+        margin-bottom: 1vh;
+    }
+    #computer-button{
+        display: block;
+    }
 
-footer{
-    padding:10vh;
-    background-color: #607D6A;
-    height: 50vh;
+
+    .title {font-size: 3.5vh;}
+    .subtitle {font-size: 2vh;}
+    .text {
+        font-size: 1.9vh;
+        margin-top: 2vh;   
+    }
+
+    .line{
+        margin: 8vh 2vh;
+    }
+    #computer-line{
+        border-bottom: 0px;
+        border-left: 1px solid #ccc;    
+        margin-top: -0.5vh;    
+    }
+    #cellphone-line{
+        display: none;
+    }
+
+
+    .container{
+        padding: 7vh;
+    }
+
+    .box{
+        display: flex;
+    }
+
+    #pc-format{width: 70%;}
+
+    .obj-box {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .ods-img {
+        display: grid; grid-template-columns: 1fr 2fr;
+    }
+
+    .info{
+        margin-bottom: 10vh;
+    }
+
+
+    .app-icon{
+        height: 30vh;
+    }
+    .gallery{
+        height: 10vh;
+        border-radius: 1vh;
+        margin: 0.25vh;
+    }
+    header .gallery:hover{
+        cursor: pointer;
+    }
+
+    .logo-slogan-white{
+        height: 15vh;
+    }
+
 }
