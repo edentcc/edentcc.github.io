@@ -41,6 +41,14 @@ button:hover{
     font-weight: 300;  
     text-decoration: none;
 }
+.formsLink{
+    color: #999999;
+    font-family:  "Lexend Deca", sans-serif;
+    font-weight: 500;
+    font-size: small;
+        text-align: center;
+}
+
 .line{
     border-bottom : 1px solid #ccc; border-bottom-width: 10%;
 }
@@ -143,6 +151,14 @@ footer .text{color: #fff}
     .logo-slogan-white{
         height: 10vh;
     }
+
+    .subtitleContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+}
+
 }
 
     #cellphone-format::-webkit-scrollbar {
