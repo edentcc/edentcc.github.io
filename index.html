@@ -16,18 +16,20 @@
         <header>
             <div class='box'>  
             <div class="app-icon">
-                <img class="app-icon" src="../images/app-icon.svg">
+                <img class="app-icon" src="images/app-icon.svg">
             </div>    
                 <div>
                     <div>
                         <h1 class="title">Éden – seu app de hortas!</h1>
-                        <h2 class="subtitle">@eden.tcc</h2>
+                        <div class="subtitleContainer">
+                        <h2 class="subtitle">@eden.tcc</h2> <a class="formsLink" href="https://forms.gle/RZY7mjt2B6q5BsfS6">Preencha nosso Forms</a>
+                        </div>
                     </div>
-                    <div class="button-container" style="margin-top: 2vh;">
+                    <div class="button-container">
                         <a href="https://drive.google.com/file/d/1lHgzGuGK_i7FHMTFnTCeB4uN318wYrqP/view?usp=sharing"><button style="box-shadow: 0px 0px 13px #73B389;"> Baixar APK </button></a>
                         <a href="/files/Éden-sistema-de-gerenciamento-de-hortas-caseiras.pdf" download="Éden - sistema de gerenciamento de hortas caseiras"><button style="opacity: 80%;"> Baixar artigo</button></a>
-                        <a href="https://youtu.be/dQw4w9WgXcQ?si=S-6ce7g9sYuTn8Y5" style="text-decoration: none;">
                         <button style="background-color:#BCBCBC; color:#5F6368; " id="computer-button"> 
+                            <img  class="compatibleIcon" src="images/image 41.png">
                             O Éden não é compatível com seu dispositivo. 
                             Assista a um vídeo demo.
                         </button></a>
@@ -42,10 +44,29 @@
                     O “Éden” é um aplicativo mobile que incentiva e guia a criação de hortas caseiras, com o foco de facilitar o cultivo por iniciantes, fornecendo orientações e promovendo práticas sustentáveis no cotidiano. A proposta central é desenvolver uma atividade prazerosa, prática e beneficente para a saúde e bem estar, mesmo para aqueles que não têm nenhuma experiência ou espaço em casa. Além disso, o projeto visa integrar de forma prática e educativa o conceito de sustentabilidade, hortoterapia e agroflorestamento, mostrando atividades e materiais informativos sobre as temáticas.
                     </p>
                 </div>
+                <div class="gallery-wrapper"> 
                 <div id="cellphone-format">
-                    <img class="gallery" src="/images/img-1.jpeg">
-                    <img class="gallery" src="/images/img-2.jpeg">
-                    <img class="gallery" src="/images/img-3.jpeg">
+                    <img class="systemImage" src="images/img-1.jpeg"
+                     onclick="openModal('images/img-1.jpeg', 'Tela Inicial', 'A tela inicial é o acesso rápido do aplicativo. Ela mostra plantios em andamento (planta e progresso), exibe lembretes/recomendações de cultivo e permite pesquisas rápidas.')"
+                     alt="Screenshot da tela inicial do app Éden">
+                    <img class="systemImage" src="images/img-2.jpeg"
+                    onclick="openModal('images/img-2.jpeg', 'Tela de plantas', 'A área de Plantas permite acompanhar a horta, exibindo todos os cultivos ordenados por prioridade de cuidados. Ao ver uma planta individualmente, você acessa detalhes como data de plantio, cuidados específicos, características e benefícios à saúde.')">
+                    <img class="systemImage" src="images/img-3.jpeg"
+                    onclick="openModal('images/img-3.jpeg', 'Quiz inicial', 'Ao finalizar seu cadastro no Éden, você responde a um quiz inicial para que o app sugira plantas adequadas ao seu perfil!')">
+                    <img class="systemImage" src="images/img-4.jpeg"
+                    onclick="openModal('images/img-4.jpeg', 'Trilhas e guias de plantio', 'Nas trilhas, o usuário pode ver dados gerais sobre uma das plantas de seu jardim, incluindo se ela é ou não comestível, a data da próxima rega ou da próxima poda! Os guias de plantio disponíveis nas telas de trilha ensinam o usuário mais detalhadamente sobre os cuidados com sua planta, explicando processos como a rega, a poda e a quantidade de luz solar ideias ao seu cultivo.')">
+                    <img class="systemImage" src="images/img-5.jpeg"
+                    onclick="openModal('images/img-5.jpeg', 'Novo plantio', 'Na tela de Novo Plantio, o usuário busca uma planta para iniciar o cultivo. Filtros e informações detalhadas auxiliam na escolha. Ao iniciar, o app faz perguntas para personalizar e adequar a trilha de cultivo à experiência do usuário.')">
+                    <img class="systemImage" src="images/img-6.jpeg"
+                    onclick="openModal('images/img-6.jpeg', 'Tela de artigos', 'A Tela de Artigos é um repositório de conhecimento para aprofundar temas sobre cultivo, bem-estar e sustentabilidade. Artigos como o de Hortoterapia fornecem ao usuário uma leitura informativa e detalhada para enriquecer sua experiência de plantio.')">
+                    <img class="systemImage" src="images/img-7.jpeg"
+                    onclick="openModal('images/img-7.jpeg', 'Tela de receitas', 'A tela de Receitas incentiva o usuário a utilizar a colheita da horta em pratos e bebidas. Cada receita apresenta um título convidativo, um breve resumo, uma lista clara de Materiais (ingredientes e quantidades) e um Modo de Fazer detalhado, organizado em passos simples como Colheita, Lavagem, Preparo e Infusão, tornando o preparo acessível e prático.')">
+                    <img class="systemImage" src="images/img-8.jpeg"
+                    onclick="openModal('images/img-8.jpeg', 'Tela de sustentabilidade', 'Área do app onde estão reunidas práticas que conciliam o cuidado da horta com o cuidado do meio ambiente, com recomendações de plantios que utilizam a reciclagem, a compostagem e práticas como o agroflorestamento e a agroecologia.')">
+                    <img class="systemImage" src="images/img-9.jpeg"
+                    onclick="openModal('images/img-9.jpeg', 'Tela de instruções', 'A tela de Instruções oferece um guia detalhado e personalizado, fornecendo informações e orientações específicas para o seu plantio e suas necessidades de cultivo.')">
+                    <img class="systemImage" src="images/img-11.jpeg"
+                    onclick="openModal('images/img-11.jpeg', 'Tela de pesquisas', 'A Barra de Pesquisa, sempre visível na parte superior, é a ferramenta de busca universal do aplicativo. Ela permite ao usuário pesquisar espécies de plantas, artigos, trilhas de cultivo e tutoriais, não importa em qual tela esteja.')">
                 </div>
             </div>
         </header>        
@@ -53,10 +74,10 @@
         <section>
             <div class='obj-box' >
                 <div class="ods-img">
-                    <img class="gallery" src="/images/ods-2.svg">
-                    <img class="gallery" src="/images/ods-3.svg">
-                    <img class="gallery" src="/images/ods-11.svg">
-                    <img class="gallery" src="/images/ods-12.svg">
+                    <img class="gallery" src="images/ods-2.svg">
+                    <img class="gallery" src="images/ods-3.svg">
+                    <img class="gallery" src="images/ods-11.svg">
+                    <img class="gallery" src="images/ods-12.svg">
                 </div>
                 <div>
                     <p class="subtitle">Objetivos</p>
@@ -106,9 +127,52 @@
             
         </div>
         <div class="logo-slogan-white" >
-            <img src="/images/logo-slogan-white.svg" class="logo-slogan-white">
+            <img src="images/logo-slogan-white.svg" class="logo-slogan-white">
         </div>
         
     </footer>
+
+    <div id="myModal" class="modal" hidden>
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <div class="modal-content" >
+        <img id="modalImage" class="modal-image">
+        <div id="modalCaption" class="modal-caption">
+            <h3 id="modalTitle">Título da Imagem</h3>
+            <p id="modalDescription">Descrição da Imagem.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const modal = document.getElementById("myModal");
+    const modalImage = document.getElementById("modalImage");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalDescription = document.getElementById("modalDescription");
+
+    function openModal(imgSrc, titleText, descriptionText) {
+        modal.style.display = "block"; 
+        modalImage.src = imgSrc; 
+        modalTitle.textContent = titleText; 
+        modalDescription.textContent = descriptionText; 
+    }
+    
+    function closeModal() {
+        modal.style.display = "none"; 
+    }
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
+    
+    document.onkeydown = function(e) {
+      e = e || window.event;
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    };
+</script>
 </body>
 </html>

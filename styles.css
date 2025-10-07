@@ -41,6 +41,14 @@ button:hover{
     font-weight: 300;  
     text-decoration: none;
 }
+.formsLink{
+    color: #999999;
+    font-family:  "Lexend Deca", sans-serif;
+    font-weight: 500;
+    font-size: small;
+        text-align: center;
+}
+
 .line{
     border-bottom : 1px solid #ccc; border-bottom-width: 10%;
 }
@@ -115,15 +123,59 @@ footer .text{color: #fff}
         border-radius: 1vh;
         margin: 0.25vh;
     }
+
+    .gallery-wrapper {
+        display: flex;
+        justify-content: center; 
+        margin: 0 auto; 
+        width: 100%; 
+        max-width: 35vh; 
+    }
+    .systemImage{
+        height: 20vh;
+        width: 10vh;
+        border-radius: 1vh;
+        margin: 0.25vh;
+        flex-shrink: 0;
+    }
     #cellphone-format{
         display: flex;
-        justify-content: space-around;
+        overflow-x: scroll; 
+        overflow-y: hidden; 
+        white-space: nowrap; 
+        width: 100%; 
+        padding-bottom: 0.5vh;
+        margin: 0 auto; 
     }
-
+  
     .logo-slogan-white{
         height: 10vh;
     }
+
+    .subtitleContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
 }
+
+}
+
+    #cellphone-format::-webkit-scrollbar {
+        width: 8px; 
+        height: 8px; 
+    }
+
+    #cellphone-format::-webkit-scrollbar-track {
+        background: #D9D9D9; 
+        border-radius: 4px; 
+    }
+
+    #cellphone-format::-webkit-scrollbar-thumb {
+        background: #989898; 
+        border-radius: 4px;
+    }
+
 
 @media screen and (min-width: 992px){
     header{
@@ -201,6 +253,32 @@ footer .text{color: #fff}
         border-radius: 1vh;
         margin: 0.25vh;
     }
+    
+    .systemImage{
+        height: 20vh;
+        width: 10vh;
+        border-radius: 1vh;
+        margin: 0.25vh;
+    }
+
+    .gallery-wrapper{
+        display: flex;
+        justify-content: center;
+        width: 12vh;
+        max-width: 100%;
+    }
+
+    #cellphone-format{
+        display: flex;
+        flex-direction: column;
+        height: 35vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
     header .gallery:hover{
         cursor: pointer;
     }
@@ -209,4 +287,85 @@ footer .text{color: #fff}
         height: 15vh;
     }
 
+    .compatibleIcon{
+     height: 2.2vh;
+     margin-right: 1vh;
+    }
+}
+
+ .modal {
+     position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    inset: 0;
+    padding-left: 0;
+
+}
+
+.modal-content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+    max-width: 700px;
+    background-color: #e6e6e6; 
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: scroll;
+    
+}
+
+.modal-image {
+    width: 100%;
+    max-height: 65vh; 
+    object-fit: contain; 
+    border-radius: 5px;
+}
+
+.modal-caption {
+    margin-top: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#modalTitle {
+    color: #607D6A; 
+    font-size: 2.5vh;
+    font-weight: bold;
+    margin-bottom: 1vh;
+     font-family:  "Lexend Deca", sans-serif;
+}
+
+#modalDescription {
+    color: #999999;
+    font-size: 1.8vh;
+      font-family:  "Lexend Deca", sans-serif;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header .gallery:hover{
+    cursor: pointer;
 }
