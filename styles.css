@@ -138,6 +138,7 @@ footer .text{color: #fff}
         margin: 0.25vh;
         flex-shrink: 0;
     }
+    
     #cellphone-format{
         display: flex;
         overflow-x: scroll; 
@@ -366,6 +367,6 @@ footer .text{color: #fff}
   cursor: pointer;
 }
 
-header .gallery:hover{
+header .systemImage:hover{
     cursor: pointer;
 }
